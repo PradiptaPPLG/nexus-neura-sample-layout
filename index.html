@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS NEURALINK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nexus.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon"><i class="fa-solid fa-brain"></i></div>
+            NEXUS
+        </div>
+        
+        <ul class="menu">
+            <li class="menu-item active" data-target="dashboard">
+                <i class="fa-solid fa-chart-pie"></i>
+                Dashboard
+            </li>
+            <li class="menu-item" data-target="chat">
+                <i class="fa-solid fa-message"></i>
+                Neural Chat
+            </li>
+            <li class="menu-item" data-target="explore">
+                <i class="fa-solid fa-compass"></i>
+                Explore Models
+            </li>
+            <li class="menu-item" data-target="history">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                History
+            </li>
+            <li class="menu-item" data-target="settings">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        
+        <!-- Dashboard Screen -->
+        <div class="screen active" id="dashboard">
+            <div class="screen-header">
+                <h1>Welcome back, Operator</h1>
+                <p>System status: Optimal. Ready for neural synchronization.</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Tokens Generated</h3>
+                    <div class="value">1.4M</div>
+                    <p style="color: #39ff14; font-size: 0.875rem; margin-top: 8px; text-shadow: 0 0 5px rgba(57,255,20,0.5);">
+                        <i class="fa-solid fa-arrow-trend-up"></i> +12% this week
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Active Models</h3>
+                    <div class="value">4</div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 8px;">GPT-4, Claude 3, Nexus-X, Llama 3</p>
+                </div>
+                <div class="card">
+                    <h3>Compute Usage</h3>
+                    <div class="value">78%</div>
+                    <div style="width: 100%; height: 6px; background: rgba(255,69,0,0.1); border: 1px solid var(--border); margin-top: 12px; overflow: hidden;">
+                        <div style="width: 78%; height: 100%; background: var(--accent); box-shadow: 0 0 10px var(--accent-glow);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Screen -->
+        <div class="screen" id="chat">
+            <div class="chat-container">
+                <div class="messages" id="chat-messages">
+                    <!-- Dummy Messages -->
+                    <div class="message ai">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">
+                            Hello! I am Nexus Neuralink. How can I assist you with your fullstack development today?
+                        </div>
+                    </div>
+                    <div class="message user">
+                        <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                        <div class="bubble">
+                            Can you help me build a modern UI for a hotel booking app called Stayora Hotel?
+                        </div>
+                    </div>
+                    <div class="message ai">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">
+                            Absolutely. For Stayora Hotel, I'd recommend a clean, glassmorphic UI using a premium color palette of navy, gold, and white. We can implement a React frontend with a Node.js backend. Shall we start with the database schema or the landing page design?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-wrapper">
+                    <input type="text" class="chat-input" placeholder="Message Nexus Neuralink..." id="chat-input">
+                    <button class="send-btn" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explore Screen -->
+        <div class="screen" id="explore">
+            <div class="screen-header">
+                <h1>Model Architecture</h1>
+                <p>Browse and configure available neural pathways.</p>
+            </div>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Nexus Vision</h3>
+                    <p style="color: var(--text-secondary); margin: 10px 0;">Advanced image recognition and generation model optimized for UI/UX assets.</p>
+                    <button style="padding: 8px 16px; background: rgba(255,69,0,0.1); border: 1px solid var(--border); color: white; cursor: pointer; transition: 0.3s;" onmouseover="this.style.boxShadow='0 0 10px var(--accent-glow)'" onmouseout="this.style.boxShadow='none'">Initialize</button>
+                </div>
+                <div class="card">
+                    <h3>Nexus Code</h3>
+                    <p style="color: var(--text-secondary); margin: 10px 0;">Fullstack codebase generation with deep contextual awareness.</p>
+                    <button style="padding: 8px 16px; background: var(--accent); border: 1px solid var(--accent-alt); color: white; cursor: pointer; box-shadow: 0 0 10px var(--accent-glow);">Active</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Screen -->
+        <div class="screen" id="history">
+            <div class="screen-header">
+                <h1>Memory Logs</h1>
+                <p>Recent synchronization sessions.</p>
+            </div>
+            <div class="card" style="margin-bottom: 15px;">
+                <h4 style="color: white; margin-bottom: 5px;">Stayora Hotel - Frontend Planning</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Oct 10, 2026 - 15 messages</p>
+            </div>
+            <div class="card" style="margin-bottom: 15px;">
+                <h4 style="color: white; margin-bottom: 5px;">Database Optimization Query</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Oct 09, 2026 - 4 messages</p>
+            </div>
+        </div>
+
+        <!-- Settings Screen -->
+        <div class="screen" id="settings">
+            <div class="screen-header">
+                <h1>System Preferences</h1>
+                <p>Configure your Neuralink experience.</p>
+            </div>
+            <div class="card" style="max-width: 600px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px; align-items: center;">
+                    <span style="color: white;">Theme Engine</span>
+                    <select style="background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--border); padding: 8px;">
+                        <option>Dark Void</option>
+                        <option>Neon Pulse</option>
+                        <option>Light Glass</option>
+                    </select>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: white;">Streaming Responses</span>
+                    <input type="checkbox" checked style="width: 18px; height: 18px;">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Navigation Logic
+        const menuItems = document.querySelectorAll('.menu-item');
+        const screens = document.querySelectorAll('.screen');
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove active classes
+                menuItems.forEach(i => i.classList.remove('active'));
+                screens.forEach(s => s.classList.remove('active'));
+                
+                // Add active class to clicked item
+                item.classList.add('active');
+                
+                // Show corresponding screen
+                const targetId = item.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        // Simple Chat Logic
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+        const messages = document.getElementById('chat-messages');
+
+        function sendMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            // Add user message
+            const userHtml = `
+                <div class="message user">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="bubble">${text}</div>
+                </div>
+            `;
+            messages.insertAdjacentHTML('beforeend', userHtml);
+            chatInput.value = '';
+            
+            // Scroll to bottom
+            messages.scrollTop = messages.scrollHeight;
+
+            // Simulate AI response
+            setTimeout(() => {
+                const aiHtml = `
+                    <div class="message ai">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">Processing your request... As a fullstack assistant, I've logged this.</div>
+                    </div>
+                `;
+                messages.insertAdjacentHTML('beforeend', aiHtml);
+                messages.scrollTop = messages.scrollHeight;
+            }, 1000);
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
+</body>
+</html>

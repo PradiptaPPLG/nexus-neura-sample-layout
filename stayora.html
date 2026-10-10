@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stayora Hotel - Luxury redefined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stayora.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <i class="fa-solid fa-hotel"></i>
+            STAYORA<span>.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="#">Dining</a></li>
+        </ul>
+        <div style="display: flex; gap: 15px;">
+            <button class="btn-primary btn-outline">Log In</button>
+            <button class="btn-primary">Book Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Experience True Luxury</h1>
+        <p>Discover a sanctuary of elegance and comfort in the heart of the city. Your unforgettable stay begins here.</p>
+        
+        <div class="booking-bar">
+            <div class="booking-group">
+                <label>Check In</label>
+                <input type="date" value="2026-10-15">
+            </div>
+            <div class="booking-group">
+                <label>Check Out</label>
+                <input type="date" value="2026-10-18">
+            </div>
+            <div class="booking-group">
+                <label>Guests</label>
+                <select>
+                    <option>1 Adult</option>
+                    <option selected>2 Adults</option>
+                    <option>2 Adults, 1 Child</option>
+                    <option>Family</option>
+                </select>
+            </div>
+            <button class="btn-primary" style="align-self: flex-end; margin-bottom: 2px;">Check Availability</button>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section" id="rooms">
+        <div class="section-title">
+            <h2>Our Featured Rooms</h2>
+            <p>Designed for comfort, crafted for luxury.</p>
+        </div>
+
+        <div class="rooms-grid">
+            <!-- Room 1 -->
+            <div class="room-card">
+                <div class="room-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deluxe Ocean View" class="room-img">
+                    <div class="room-price">$299 / night</div>
+                </div>
+                <div class="room-content">
+                    <h3>Deluxe Ocean View</h3>
+                    <div class="room-amenities">
+                        <span><i class="fa-solid fa-bed"></i> King Bed</span>
+                        <span><i class="fa-solid fa-wifi"></i> Free Wifi</span>
+                        <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+                    </div>
+                    <p style="color: var(--gray-600); margin-bottom: 20px;">Experience breathtaking sunrises over the ocean from your private balcony.</p>
+                    <button class="btn-primary" style="width: 100%; border-radius: 8px;">Book Room</button>
+                </div>
+            </div>
+
+            <!-- Room 2 -->
+            <div class="room-card">
+                <div class="room-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Suite" class="room-img">
+                    <div class="room-price">$499 / night</div>
+                </div>
+                <div class="room-content">
+                    <h3>Executive Suite</h3>
+                    <div class="room-amenities">
+                        <span><i class="fa-solid fa-bed"></i> King Bed</span>
+                        <span><i class="fa-solid fa-martini-glass"></i> Mini Bar</span>
+                        <span><i class="fa-solid fa-spa"></i> Jacuzzi</span>
+                    </div>
+                    <p style="color: var(--gray-600); margin-bottom: 20px;">Spacious suite featuring a separate living area, perfect for business or relaxation.</p>
+                    <button class="btn-primary" style="width: 100%; border-radius: 8px;">Book Room</button>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="room-card">
+                <div class="room-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Presidential Villa" class="room-img">
+                    <div class="room-price">$899 / night</div>
+                </div>
+                <div class="room-content">
+                    <h3>Presidential Villa</h3>
+                    <div class="room-amenities">
+                        <span><i class="fa-solid fa-bed"></i> 2 King Beds</span>
+                        <span><i class="fa-solid fa-water-ladder"></i> Private Pool</span>
+                        <span><i class="fa-solid fa-bell-concierge"></i> Butler</span>
+                    </div>
+                    <p style="color: var(--gray-600); margin-bottom: 20px;">The ultimate luxury experience with panoramic views and exclusive amenities.</p>
+                    <button class="btn-primary" style="width: 100%; border-radius: 8px;">Book Room</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="nav-brand" style="color: white; margin-bottom: 15px; display: inline-flex;">
+                    <i class="fa-solid fa-hotel"></i> STAYORA<span>.</span>
+                </a>
+                <p style="color: var(--gray-600); font-size: 0.9rem; max-width: 250px;">Redefining luxury hospitality with unparalleled service and breathtaking destinations.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Rooms</a></li>
+                    <li><a href="#">Dining & Bar</a></li>
+                    <li><a href="#">Spa & Wellness</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li style="color: var(--gray-200);"><i class="fa-solid fa-location-dot" style="margin-right: 10px; color: var(--gold);"></i> 123 Luxury Ave, NY 10001</li>
+                    <li style="color: var(--gray-200);"><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--gold);"></i> +1 (555) 123-4567</li>
+                    <li style="color: var(--gray-200);"><i class="fa-solid fa-envelope" style="margin-right: 10px; color: var(--gold);"></i> reservations@stayora.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stayora Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
